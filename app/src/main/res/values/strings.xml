@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Расписание поездов</string>
+    <string name="save_text">сохранить</string>
+    <string name="delete">удалить</string>
+    <string name="example_name_station">Название станции</string>
+    <string name="dep_time_text">Отправление:</string>
+    <string name="time_example">00:00 00.00.2022</string>
+    <string name="arr_time_text">Прибытие:</string>
+    <string name="time_parking_text">Время стоянки:</string>
+    <string name="time_in_hours_example">50 ч.</string>
+    <string name="cancel_text">отмена</string>
+    <string name="add_station_text">добавить станцию</string>
+    <string name="time_move_text">Время в пути:</string>
+    <string name="example_name_route">Название маршрута</string>
+    <string name="select_station_text">Выберите станцию:</string>
+    <string name="write_time_arr_text">Введите время прибытия:</string>
+    <string name="write_time_dep_text">Введите время отправления:</string>
+    <string name="add_text">добавить</string>
+</resources>

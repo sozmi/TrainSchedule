@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:rowCount="5"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".main.fragments.RouteNodeFragment">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="@string/select_station_text" />
+
+    <Spinner
+        android:id="@+id/route_node_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:minWidth="200dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text="@string/write_time_arr_text" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/route_node_time_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="1"
+        android:layout_column="1"
+        android:layout_marginTop="15dp"
+        android:minWidth="200dp"
+        android:inputType="number"
+        android:hint="@string/time_example"
+        app:mask="__:__ __.__.____"
+        app:maskCharacter="_"
+        app:maskStyle="completable" />
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:text="@string/write_time_dep_text" />
+
+    <com.santalu.maskara.widget.MaskEditText
+        android:id="@+id/route_node_tbx_time_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="1"
+        android:layout_marginTop="15dp"
+        android:minWidth="200dp"
+        android:inputType="number"
+        android:hint="@string/time_example"
+        app:mask="__:__ __.__.____"
+        app:maskCharacter="_"
+        app:maskStyle="completable" />
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text="@string/time_parking_text" />
+
+    <TextView
+        android:id="@+id/route_node_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_column="1"
+        android:text="@string/time_in_hours_example" />
+
+    <Button
+        android:id="@+id/route_node_btn_cancel"
+        android:layout_width="wrap_content"
+        android:minWidth="150dp"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:layout_margin="15dp"
+        android:text="@string/cancel_text"/>
+
+    <Button
+        android:id="@+id/route_node_btn_save"
+        android:layout_width="wrap_content"
+        android:minWidth="150dp"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_margin="15dp"
+        android:text="@string/save_text">
+
+    </Button>
+</GridLayout>

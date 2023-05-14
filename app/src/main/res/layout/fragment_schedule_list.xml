@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/schedule_list_station"
+        android:name="com.example.trainschedule.ScheduleFragment"
+        style="@style/MyRecyclerView"
+        android:layout_above="@+id/schedule_btn_add"
+        app:layoutManager="LinearLayoutManager"
+        tools:context=".main.fragments.ScheduleListFragment"
+        tools:listitem="@layout/fragment_schedule_item" />
+
+    <Button
+        android:id="@+id/schedule_btn_add"
+        android:layout_height="wrap_content"
+        android:text="@string/add_text"
+        style="@style/MyButtonStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
